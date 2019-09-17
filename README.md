@@ -1,18 +1,29 @@
 # API-To-Event
 
-A repo focused primarily on documenting the relationships between Windows API functions and security events that get generated when using such functions. This project leverages on-demand PowerShell functions from the [PSReflect-Functions](https://github.com/jaredcatkinson/PSReflect-Functions) project to abstract Win32 API functions and the [Mordor](https://github.com/Cyb3rWard0g/mordor) project to validate the generation of events and store the data sets generated.
+A repo focused primarily on documenting the relationships between API functions and security events that get generated when using such functions. This project leverages other projects to be able to validate and abstract the use of those apis:
+
+* Windows
+    * [PSReflect-Functions](https://github.com/jaredcatkinson/PSReflect-Functions)
+    * [PurpleSharp](https://github.com/mvelazc0/PurpleSharp)
+* AWS
+    * [Boto3](https://github.com/boto/boto3)
+    * [Pacu](https://github.com/RhinoSecurityLabs/pacu)
+
+In addition, any dataset generated while testing and validating events will be stored in the [Mordor](https://github.com/Cyb3rWard0g/mordor) project.
 
 # Goals
 
-* Share a list of Windows API functions mapped to security events
+* Share lists of API functions mapped to security events
 * Help security analysts to understand what it is that can trigger specific security events
-* Enhance detections focusing on the Windows API functions used in adversarial tooling
+* Enhance detections adding context on API functionality
+
+# Getting Started
+
+* [List of API-To-Events](https://docs.google.com/spreadsheets/d/1Y3MHsgDWj_xH4qrqIMs4kYJq1FSuqv4LqIrcX24L10A/edit?usp=sharing)
 
 # Authors
 
 * Roberto Rodriguez [@Cyb3rWard0g](https://twitter.com/Cyb3rWard0g)
-
-# Contributors
 
 # Contributing
 
